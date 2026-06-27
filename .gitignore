@@ -1,1 +1,8 @@
-node_modules
+# dependencies
+/node_modules
+
+# next.js build
+/.next/
+
+# env files
+.env*
