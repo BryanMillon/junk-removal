@@ -14,7 +14,7 @@ const steps = [
     desc: "Our professional team arrives on time and takes care of all the heavy lifting.",
   },
   {
-    icon: "/icons/thumbsUp.png",
+    icon: "/icons/thumbsup.png",
     title: "Junk Gone Today",
     desc: "We remove your unwanted items quickly and leave your space clean and clutter-free.",
   },
