@@ -61,7 +61,7 @@ export function WhyChooseUs() {
                 <div className="flex items-center gap-2">
                   <div className="w-12 h-12 flex items-center justify-center shrink-0">
                     <Image
-                      src="/icons/check.png"
+                      src="/icons/Check.png"
                       alt="check"
                       width={36}
                       height={36}
