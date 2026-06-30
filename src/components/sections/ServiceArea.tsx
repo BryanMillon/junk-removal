@@ -198,33 +198,48 @@ export function ServiceArea() {
             </div>
           </motion.div>
 
-          {/* Mapa */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="flex-1 flex flex-col gap-4"
-          >
-            <h2 className="text-4xl font-bold leading-10 text-[#0D1827] dark:text-white font-sans uppercase">
-              SERVICE AREA
-            </h2>
-            <a href="https://www.google.com/maps/place/Atlanta,+GA" target="_blank" rel="noopener noreferrer"
-              className="w-52 px-5 py-3 bg-[#1ABA55] hover:bg-green-600 rounded-[5px] inline-flex justify-center items-center transition-colors">
-              <span className="text-white text-2xl font-bold leading-9 font-sans whitespace-nowrap">Atlanta, GA</span>
-            </a>
-            <div className="flex-1 min-h-[500px] rounded-2xl overflow-hidden shadow-md">
-              <iframe
-                title="Junk Removal LLC Service Area Atlanta GA"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d350000!2d-84.45!3d33.65!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                style={{ border: 0, minHeight: "500px" }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-          </motion.div>
+      {/* Mapa */}
+<motion.div
+  initial={{ opacity: 0, x: 30 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  className="flex-1 flex flex-col gap-4"
+>
+  <h2 className="text-4xl font-bold leading-10 text-[#0D1827] dark:text-white font-sans uppercase">
+    SERVICE AREA
+  </h2>
+  <a href="https://www.google.com/maps/place/4599+Jonesboro+Rd,+Forest+Park,+GA+30297"
+    target="_blank" rel="noopener noreferrer"
+    className="w-52 px-5 py-3 bg-[#1ABA55] hover:bg-green-600 rounded-[5px] inline-flex justify-center items-center transition-colors">
+    <span className="text-white text-2xl font-bold leading-9 font-sans whitespace-nowrap">Atlanta, GA</span>
+  </a>
+
+  {/* Áreas de servicio en texto */}
+  <div className="flex flex-wrap gap-2">
+    {["Clayton County", "Henry County", "Fayette County", "Coweta County",
+      "Jonesboro", "McDonough", "Peachtree City", "Newnan",
+      "Forest Park", "College Park", "East Point", "Riverdale"].map((area) => (
+     <span key={area}
+  className="px-3 py-1 text-sm font-medium text-[#044A81] bg-[#044A81]/10 rounded-full font-sans dark:text-white dark:bg-white/10 dark:border dark:border-white/20">
+  {area}
+</span>
+    ))}
+  </div>
+
+  {/* Mapa */}
+  <div className="flex-1 min-h-[500px] rounded-2xl overflow-hidden shadow-md">
+    <iframe
+      title="Junk Removal LLC Service Area Atlanta GA"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200000!2d-84.37!3d33.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4f6b1b1b1b1b1%3A0x0!2s4599+Jonesboro+Rd%2C+Forest+Park%2C+GA+30297!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+      width="100%"
+      height="100%"
+      style={{ border: 0, minHeight: "500px" }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
+  </div>
+</motion.div>
 
         </div>
       </section>
